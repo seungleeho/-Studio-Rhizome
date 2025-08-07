@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Noto Sans KR', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-seoul-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden;
+  }
+  
+  .interest-tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium cursor-pointer transition-all duration-200;
+  }
+  
+  .interest-tag-selected {
+    @apply bg-seoul-blue text-white;
+  }
+  
+  .interest-tag-unselected {
+    @apply bg-gray-100 text-gray-700 hover:bg-gray-200;
+  }
+}
